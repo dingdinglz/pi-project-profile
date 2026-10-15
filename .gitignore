@@ -1,0 +1,4 @@
+node_modules/
+.pi/profile.json
+.pi/.profile-*.tmp
+*.tgz

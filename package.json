@@ -1,0 +1,35 @@
+{
+  "name": "pi-project-profile",
+  "version": "0.1.0",
+  "description": "Remember the selected model and thinking level per Pi working directory.",
+  "type": "module",
+  "license": "MIT",
+  "author": "dingdinglz",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dingdinglz/pi-project-profile.git"
+  },
+  "homepage": "https://github.com/dingdinglz/pi-project-profile#readme",
+  "bugs": {
+    "url": "https://github.com/dingdinglz/pi-project-profile/issues"
+  },
+  "keywords": ["pi-package", "pi", "model", "profile"],
+  "files": ["src", "README.md", "LICENSE"],
+  "pi": {
+    "extensions": ["./src/index.ts"]
+  },
+  "scripts": {
+    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "check": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.0",
+    "typescript": "^5.9.3"
+  }
+}
